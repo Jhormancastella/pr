@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background: #fff;
+}
+
+header {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.fondo{
+    background: linear-gradient(90deg, rgb(2, 1, 17) 0%, rgb(0, 0, 0) 35%, rgb(0, 0, 0) 100%)
+}
+.f{
+    
+    width: 100%;
+    height: 100%;
+    background: fixed;
+    background: center;
+    background-color:rgba(255, 60, 0, 0.150);
+    overflow: hidden;
+}
+img {
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.set{
+    padding: 10px;
+}
+.not{
+    padding: 10px;
+}
+.pf{
+    width: 70px;
+    padding: 10px;
+}
+.pf:hover{
+    background-color: rgb(255, 102, 0);
+    border-radius: 50%;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+}
+
+/*.perfil:hover{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 102, 0,0.5);
+}*/
+
+.c{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+/*.c:hover{
+    background-color: rgba(255, 102, 0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}*/
+.logo {
+    margin: 0 40px;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: cornflowerblue;
+}
+button{
+    background-color: rgb(255, 123, 0);
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    border-radius: 15px;
+    height: 2.8vw;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif ;
+    font-size: 15px;
+    bottom: 0;
+    top: 55%;
+    left: 50%; /* Centra horizontalmente el elemento */
+    transform: translateX(-50%); /* Ajusta para centrar exactamente */
+}
+.fft{
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    top: 100px;
+    left: 50%; /* Centra horizontalmente el elemento */
+    transform: translateX(-50%); /* Ajusta para centrar exactamente */ 
+}
+.fpr {
+    position: absolute;
+    bottom: 0;
+    top: 80%;
+    left: 50%; /* Centra horizontalmente el elemento */
+    transform: translateX(-50%); /* Ajusta para centrar exactamente */
+}
+
+.Us{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    top: 40%;
+    left: 50%; /* Centra horizontalmente el elemento */
+    transform: translateX(-50%); /* Ajusta para centrar exactamente */
+}
+.CR{
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    top: 45%;
+    left: 50%; /* Centra horizontalmente el elemento */
+    transform: translateX(-50%); /* Ajusta para centrar exactamente */
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .c, .perfil, .logo {
+        margin: 10px 0;
+    }
+}

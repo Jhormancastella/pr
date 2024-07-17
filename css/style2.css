@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+body, html {
+    background: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.fondo {
+    background: linear-gradient(90deg, rgb(2, 1, 17) 0%, rgb(0, 0, 0) 35%, rgb(0, 0, 0) 100%);
+}
+.perfil{
+    width: 70px;
+    padding: 10px;
+}
+#logo-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    opacity: 0;
+    visibility: hidden; /*primer cambio*/
+    animation: fadeIn 1s 3s forwards; /*segundo cambio*/
+}
+#login-container {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeeded;/*segundo cambio*/
+    padding: 20px; /*segundo cambio*/
+    border-radius: 5%;/*segundo cambio*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);/*segundo cambio*/
+    animation: fadeOut 1s 2s forwards;/*segundo cambio*/
+}
+.li {
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2 {
+    font-family: myrid pro, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+p {
+    font-size: 10px;
+    text-align: center;
+}
+.f {
+    width: 100%;
+    height: 100%;
+    background: fixed;
+    background: center;
+    overflow: hidden;
+}
+#logo {
+    width: 200px;
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
